@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Added Gradle files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Added dependencies.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647289903852</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added dependencies.">
+      <created>1647290204656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647290204656</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +108,7 @@
     <MESSAGE value="Initial setup." />
     <MESSAGE value="Moved .gitignore" />
     <MESSAGE value="Added Gradle files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gradle files" />
+    <MESSAGE value="Added dependencies." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dependencies." />
   </component>
 </project>
