@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Added dependencies.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/App.java" afterDir="false" />
+    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Server setup.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/SpringBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/SpringDataConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/SpringWebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647290204656</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Server setup.">
+      <created>1647295904524</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647295904524</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +122,7 @@
     <MESSAGE value="Moved .gitignore" />
     <MESSAGE value="Added Gradle files" />
     <MESSAGE value="Added dependencies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dependencies." />
+    <MESSAGE value="Server setup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server setup." />
   </component>
 </project>

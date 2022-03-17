@@ -1,30 +1,27 @@
 package com.revature.gamedatabase;
 
+import com.revature.gamedatabase.SpringBeanConfig;
 import org.apache.catalina.LifecycleException;
-import org.apache.catalina.servlets.DefaultServlet;
 import org.apache.catalina.startup.Tomcat;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
 public class App
 {
     public static void main(String[] args)
     {
-        String webAppName = "";
+        ApplicationContext springIoC = new AnnotationConfigApplicationContext(SpringBeanConfig.class);
+        AnnotationConfigWebApplicationContext webmvc = new AnnotationConfigWebApplicationContext();
+        webmvc.setParent(springIoC);
+        webmvc.scan("com.revature.gamedatabase");
 
-        Tomcat server = new Tomcat();
-        server.setBaseDir(System.getProperty("java.io.tmpdir"));
-        server.setPort(8080);
-        server.getConnector();
-        server.addContext(webAppName, null);
-
-        server.addServlet(webAppName, "defaultServlet", new DefaultServlet()).addMapping("/*");
+        Tomcat server = springIoC.getBean(Tomcat.class);
 
         try
         {
             server.start();
-            server.getServer().await();
         }
 
         catch (LifecycleException e)
