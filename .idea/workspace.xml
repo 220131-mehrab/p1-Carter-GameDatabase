@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Added Spring and started configuring beans.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/Game.java" afterDir="false" />
+    <list default="true" id="3fb7a8aa-a66c-4833-9001-d398ed8c0b32" name="Changes" comment="Created a default Game class.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/gamedatabase/GameRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647541201742</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created a default Game class.">
+      <created>1647543079242</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647543079242</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +133,7 @@
     <MESSAGE value="Added dependencies." />
     <MESSAGE value="Server setup." />
     <MESSAGE value="Added Spring and started configuring beans." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Spring and started configuring beans." />
+    <MESSAGE value="Created a default Game class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a default Game class." />
   </component>
 </project>
