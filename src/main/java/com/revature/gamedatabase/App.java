@@ -1,7 +1,7 @@
 package com.revature.gamedatabase;
 
-import com.revature.gamedatabase.SpringBeanConfig;
 import org.apache.catalina.LifecycleException;
+import org.apache.catalina.servlets.DefaultServlet;
 import org.apache.catalina.startup.Tomcat;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,12 +12,13 @@ public class App
 {
     public static void main(String[] args)
     {
-        ApplicationContext springIoC = new AnnotationConfigApplicationContext(SpringBeanConfig.class);
-        AnnotationConfigWebApplicationContext webmvc = new AnnotationConfigWebApplicationContext();
-        webmvc.setParent(springIoC);
-        webmvc.scan("com.revature.gamedatabase");
+        Tomcat server = new Tomcat();
+        server.setBaseDir("java.io.tmpdir");
+        server.setPort(8080);
+        server.getConnector();
+        server.addContext("", null);
 
-        Tomcat server = springIoC.getBean(Tomcat.class);
+        server.addServlet("", "DefaultServlet", new DefaultServlet()).addMapping("/*");
 
         try
         {
