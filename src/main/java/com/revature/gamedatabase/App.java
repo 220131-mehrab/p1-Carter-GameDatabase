@@ -3,10 +3,6 @@ package com.revature.gamedatabase;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.servlets.DefaultServlet;
 import org.apache.catalina.startup.Tomcat;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
 
 public class App
 {
@@ -19,6 +15,8 @@ public class App
         server.addContext("", null);
 
         server.addServlet("", "DefaultServlet", new DefaultServlet()).addMapping("/*");
+        server.addServlet("", "GameServlet", new GameServlet()).addMapping("/games");
+        server.addServlet("", "AddGameServlet", new AddGame()).addMapping("/addgame");
 
         try
         {

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Database</title>
+</head>
+<body>
+    <h1>Welcome to the game database</h1>
+    <form action="/games" method="post">
+        <tr>
+            <td>ID:</td>
+            <td><input type="number" name="typeId"/>></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" id="name"/></td>
+        </tr>
+        <br><button type="button" onclick="postGame()">Add Game</button>
+    </form>
+</body>
+</html>
