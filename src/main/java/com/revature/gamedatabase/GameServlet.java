@@ -34,7 +34,7 @@ public class GameServlet extends HttpServlet
 
         try
         {
-            ResultSet resultSet = connection.prepareStatement("select * from games").executeQuery();
+            ResultSet resultSet = connection.prepareStatement("select * from com.revature.gamedatabase.Game").executeQuery();
 
             while (resultSet.next())
             {
